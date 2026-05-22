@@ -1,0 +1,11 @@
+Package: shinyliveconverttest
+Title: Test converting an R Shiny application to Shinylive
+Version: 0.0.1
+Description: List the package dependencies here for the GitHub action to automatically
+  include the packages on the build. This is required for r-shinylive version >= 0.3.0.
+Imports: 
+    shiny,
+    magrittr,
+    ggplot2,
+    dplyr
+Encoding: UTF-8
