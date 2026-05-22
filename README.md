@@ -15,7 +15,7 @@ This will create a site that can be run locally by typing: `httpuv::runStaticSer
 
 To deploy the shinylive app on github pages:
 - make the app available as repo.
-- make a folder `.github/workflows` that contains the `deploy-app.yaml` (this file contains the instructions for github actions to convert the app.R file into a site that can be hosted on github pages).
+- make a folder `.github/workflows` that contains the `deploy-app.yaml` (this file contains the instructions for github actions to convert the app.R file into a site that can be hosted on github pages). This can be done in the RStudio IDE when the working directory is set to the folder that contains app.R and using this command: `usethis::use_github_action(url="https://github.com/posit-dev/r-shinylive/blob/actions-v1/examples/deploy-app.yaml")`
 -  On the github repo page choose navigate to "Settings -> Pages" and choose under "Build and deployment" source: Github actions
 -  Navigate to "Actions" and start the workflow "Deploy app to gh-pages"
 -  If successful you can navigate to deployments to find the link to the page, or go to the About section and navigate to settings. Select the checkbox `Use your GitHub Pages website` to add a link to the app.
